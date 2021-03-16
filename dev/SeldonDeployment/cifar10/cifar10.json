@@ -14,7 +14,7 @@
                 "manager": "argocd-application-controller",
                 "operation": "Update",
                 "apiVersion": "machinelearning.seldon.io/v1",
-                "time": "2021-03-16T16:59:14Z",
+                "time": "2021-03-16T17:01:17Z",
                 "fieldsType": "FieldsV1",
                 "fieldsV1": {
                     "f:metadata": {
@@ -43,7 +43,7 @@
                 "manager": "manager",
                 "operation": "Update",
                 "apiVersion": "machinelearning.seldon.io/v1",
-                "time": "2021-03-16T16:59:42Z",
+                "time": "2021-03-16T17:01:18Z",
                 "fieldsType": "FieldsV1",
                 "fieldsV1": {
                     "f:spec": {
@@ -60,6 +60,10 @@
                             "f:cifar10-default-0-cifar10-container": {
                                 ".": {},
                                 "f:availableReplicas": {},
+                                "f:replicas": {}
+                            },
+                            "f:cifar10-default-explainer": {
+                                ".": {},
                                 "f:replicas": {}
                             }
                         },
@@ -106,7 +110,7 @@
                 "componentSpecs": [
                     {
                         "metadata": {
-                            "creationTimestamp": "2021-03-16T17:01:13Z"
+                            "creationTimestamp": "2021-03-16T17:01:37Z"
                         },
                         "spec": {
                             "containers": [
@@ -159,14 +163,7 @@
                     "version": "default"
                 },
                 "svcOrchSpec": {},
-                "traffic": 100,
-                "explainer": {
-                    "type": "AnchorImages",
-                    "containerSpec": {
-                        "name": "",
-                        "resources": {}
-                    }
-                }
+                "traffic": 100
             }
         ],
         "annotations": {
